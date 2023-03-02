@@ -1,0 +1,232 @@
+*{
+     margin: 0px;
+     padding: 0px;
+     /* list-style: none; */
+}
+
+.clearFix{
+     float: none;
+     clear: both;
+}
+
+#global{
+     width: 65%;
+     margin: 0px auto;
+     margin-top: 30px;
+     padding: 25px;
+     background: white;
+     box-shadow: 0px 0px 2px #ccc;
+}
+
+#logo{
+     font-family: verdana, Arial;
+     font-size: 25px;
+     letter-spacing: 4px;
+     line-height: 75px;
+     color: white;
+     text-align: center;
+     width: 385px;
+     height: 80px;
+     margin-bottom: 20px;
+     float: left;
+     text-transform: uppercase;
+}
+
+#menu{
+     font-family: Arial, Helvetica;
+     background: #333;
+     width: 100%;
+     text-transform: uppercase;
+     margin-bottom: 20px;
+}
+
+#menu ul{
+     line-height: 46px;
+     list-style: none;
+}
+#menu li{
+     height: 46px;
+     display: inline-block;
+     transition: all 300ms;
+}
+
+
+#menu a{
+     display: block;
+     color: white;
+     text-decoration: none;
+     padding-left: 30px;
+     padding-right: 30px;
+}
+
+#posts{
+     width: 60%;
+     float: left;
+     font-family: Arial, Helvetica;
+     background-color: white;
+     position: center;
+}
+
+.post{
+     padding: 7px;
+
+}
+
+.post h2{
+     font-size: 40px;
+     left: 0;
+}
+
+.post .date{
+     color: gray;
+     margin-top: 5px;
+}
+
+.post p{
+     margin-top: 10px;
+     margin-bottom: 10px;
+     line-height: 20px;
+     text-align: justify;
+}
+
+.button-more{
+     display: block;
+     font-size: 15px;
+     text-align: center;
+     padding: 15px;
+     text-decoration: none;
+     color: white;
+     margin-top: 10px;
+     width: 75px;
+     margin-bottom: 20px;
+     /* float: right; */
+}
+
+#sidebar{
+     font-family: Arial, Helvetica;
+     width: 37%;
+     float: right;
+}
+
+#sidebar h4{
+     margin-top: 50px;
+     margin-bottom: 20px;
+     text-align: center;
+     line-height: 10px;
+     color: #333;
+     background-image: url("../img/lines.png") repeat-x;
+}
+
+#sidebar h4 span{
+     background: white;
+     padding: 5px;
+}
+
+#sidebar img{
+     width: 100%;
+}
+
+#sidebar p{
+     font-size: 15px;
+     text-align:justify;
+}
+
+form input[type="text"],
+form input[type="pass"],
+form input[type="email"]{
+     width: 300px;
+     padding: 10px;
+     border-radius: 2px;
+     border: 1px solid #ccc;
+     margin-bottom: 10px;
+     margin-top: 5px;
+}
+
+form input[type="submit"]{
+     background-color: #ccc;
+     padding: 10px;
+     border: 1px solid gray;
+     color: #333;
+     cursor: pointer;
+}
+
+footer{
+     font-family: Arial, Helvetica;
+     color: white;
+     height: 60px;
+     background: rgba(51,51,51);
+     padding: 60px;
+     margin: auto;
+     /* width: 75px; */
+     text-align: center;
+     padding-left: 50px;
+     padding-right: 50px;
+     margin-top: 50px;
+     line-height: 70px;
+}
+
+.bx-wrapper, .bx-viewport{
+     height: 250px !important;
+
+}
+
+#selectorScene{
+     position: fixed;
+     top: 35%;
+     padding: 10px;
+     /* background-color: rgba(51,51,51, 0.5); */
+     width: 50px;
+     height: 50px;
+}
+
+#to-green, #to-red, #to-blue{
+     width: 95px;
+     height: 25px;
+     border: 1px solid white;
+     display: block;
+     margin: 0px auto;
+     margin-top: 5px;
+     margin-bottom: 5px;
+     color: white;
+     cursor: pointer;
+     padding: 5px;
+}
+#to-green{
+     background-color: #235e3d;
+}
+
+#to-red{
+     background-color: #CA3413;
+}
+
+#to-blue{
+     background-color: #1f87c4;
+}
+
+.subir{
+     color: white;
+     text-decoration: none;
+     display: block;
+     float: right;
+}
+
+#box{
+     width: 60%;
+     float: left;
+     margin-top: 40px;
+}
+
+#acordeon {
+     margin-top: 20px;
+}
+
+#reloj{
+     font-size: 40px;
+     font-weight: bold;
+     font-family: arial;
+     color: #333;
+     width: 30%;
+     border: 5px dashed #333;
+     padding: 30px;
+     margin: 0px auto;
+}
