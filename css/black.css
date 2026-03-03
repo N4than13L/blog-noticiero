@@ -1,0 +1,16 @@
+body {
+  background: url("https://images.pexels.com/photos/4004376/pexels-photo-4004376.jpeg");
+  background-attachment: fixed;
+}
+
+#logo {
+  background: #3f3e3e;
+}
+
+#menu ul li:hover {
+  background: #3f3e3e;
+}
+
+.button-more {
+  background-color: #3f3e3e;
+}

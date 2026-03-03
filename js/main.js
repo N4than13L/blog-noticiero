@@ -107,6 +107,15 @@ $(document).ready(function () {
     theme.attr("href", "css/blue.css");
   });
 
+  $("#to-black").click(function () {
+    theme.attr("href", "css/black.css");
+  });
+
+  var footer_description = document.getElementById("footer_description");
+  footer_description.innerHTML =
+    `Web desarrollada por José Nathaniel Bonilla &copy; ` +
+    moment().format("YYYY");
+
   //scroll arriba de la web.
 
   $(".subir").click(function (e) {
@@ -116,7 +125,7 @@ $(document).ready(function () {
       {
         scrollTop: 0,
       },
-      500
+      500,
     );
 
     return false;
@@ -154,4 +163,6 @@ $(document).ready(function () {
       $("#reloj").html(reloj);
     }, 1000);
   }
+
+  // console.log("hola mundo desde un archivo externo");
 });

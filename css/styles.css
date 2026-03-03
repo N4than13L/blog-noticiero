@@ -180,7 +180,8 @@ footer {
 
 #to-green,
 #to-red,
-#to-blue {
+#to-blue,
+#to-black {
   width: 115px;
   height: 45px;
   border: 1px solid white;
