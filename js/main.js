@@ -10,72 +10,72 @@ $(document).ready(function () {
   }
 
   //post
-  if (window.location.href.indexOf("index") > -1) {
-    var posts = [
-      {
-        title: "Prueba de titulo 1",
-        date:
-          "publicado el " +
-          moment().date() +
-          " " +
-          moment().format("MMMM") +
-          " " +
-          moment().format("YYYY"),
-        content:
-          " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus lorem sit amet libero accumsan, ac ultricies odio dignissim. In sit amet odio vel sem pretium mollis tempor nec lacus. Fusce ullamcorper sollicitudin mollis. Mauris at ultrices velit. Nam tempus at risus sed tempor. Cras non volutpat est, nec consectetur risus. Cras finibus feugiat pellentesque. Ut eros neque, commodo vitae sagittis et, fermentum eu mauris. Ut vehicula, lectus at molestie rutrum, lacus libero tempor odio, quis auctor quam lorem non nunc. Praesent iaculis faucibus nulla, eu maximus arcu mattis auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla pretium ut nisl non rutrum. Sed rhoncus dui at elementum dignissim. Nam suscipit ut urna sed aliquam. Donec et mollis arcu.",
-      },
-      {
-        title: "Prueba de titulo 2",
-        date:
-          "publicado el " +
-          moment().date() +
-          " " +
-          moment().format("MMMM") +
-          " " +
-          moment().format("YYYY"),
-        content:
-          " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus lorem sit amet libero accumsan, ac ultricies odio dignissim. In sit amet odio vel sem pretium mollis tempor nec lacus. Fusce ullamcorper sollicitudin mollis. Mauris at ultrices velit. Nam tempus at risus sed tempor. Cras non volutpat est, nec consectetur risus. Cras finibus feugiat pellentesque. Ut eros neque, commodo vitae sagittis et, fermentum eu mauris. Ut vehicula, lectus at molestie rutrum, lacus libero tempor odio, quis auctor quam lorem non nunc. Praesent iaculis faucibus nulla, eu maximus arcu mattis auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla pretium ut nisl non rutrum. Sed rhoncus dui at elementum dignissim. Nam suscipit ut urna sed aliquam. Donec et mollis arcu.",
-      },
-      {
-        title: "Prueba de titulo 3",
-        date:
-          "publicado el " +
-          moment().date() +
-          " " +
-          moment().format("MMMM") +
-          " " +
-          moment().format("YYYY"),
-        content:
-          " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus lorem sit amet libero accumsan, ac ultricies odio dignissim. In sit amet odio vel sem pretium mollis tempor nec lacus. Fusce ullamcorper sollicitudin mollis. Mauris at ultrices velit. Nam tempus at risus sed tempor. Cras non volutpat est, nec consectetur risus. Cras finibus feugiat pellentesque. Ut eros neque, commodo vitae sagittis et, fermentum eu mauris. Ut vehicula, lectus at molestie rutrum, lacus libero tempor odio, quis auctor quam lorem non nunc. Praesent iaculis faucibus nulla, eu maximus arcu mattis auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla pretium ut nisl non rutrum. Sed rhoncus dui at elementum dignissim. Nam suscipit ut urna sed aliquam. Donec et mollis arcu.",
-      },
-      {
-        title: "Prueba de titulo 4",
-        date:
-          "publicado el " +
-          moment().date() +
-          " " +
-          moment().format("MMMM") +
-          " " +
-          moment().format("YYYY"),
-        content:
-          " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus lorem sit amet libero accumsan, ac ultricies odio dignissim. In sit amet odio vel sem pretium mollis tempor nec lacus. Fusce ullamcorper sollicitudin mollis. Mauris at ultrices velit. Nam tempus at risus sed tempor. Cras non volutpat est, nec consectetur risus. Cras finibus feugiat pellentesque. Ut eros neque, commodo vitae sagittis et, fermentum eu mauris. Ut vehicula, lectus at molestie rutrum, lacus libero tempor odio, quis auctor quam lorem non nunc. Praesent iaculis faucibus nulla, eu maximus arcu mattis auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla pretium ut nisl non rutrum. Sed rhoncus dui at elementum dignissim. Nam suscipit ut urna sed aliquam. Donec et mollis arcu.",
-      },
-      {
-        title: "Prueba de titulo 5",
-        date:
-          "publicado el " +
-          moment().date() +
-          " " +
-          moment().format("MMMM") +
-          " " +
-          moment().format("YYYY"),
-        content:
-          " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus lorem sit amet libero accumsan, ac ultricies odio dignissim. In sit amet odio vel sem pretium mollis tempor nec lacus. Fusce ullamcorper sollicitudin mollis. Mauris at ultrices velit. Nam tempus at risus sed tempor. Cras non volutpat est, nec consectetur risus. Cras finibus feugiat pellentesque. Ut eros neque, commodo vitae sagittis et, fermentum eu mauris. Ut vehicula, lectus at molestie rutrum, lacus libero tempor odio, quis auctor quam lorem non nunc. Praesent iaculis faucibus nulla, eu maximus arcu mattis auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla pretium ut nisl non rutrum. Sed rhoncus dui at elementum dignissim. Nam suscipit ut urna sed aliquam. Donec et mollis arcu.",
-      },
-    ];
 
-    posts.forEach((item, index) => {
-      var post = `
+  var posts = [
+    {
+      title: "Prueba de titulo 1",
+      date:
+        "publicado el " +
+        moment().date() +
+        " " +
+        moment().format("MMMM") +
+        " " +
+        moment().format("YYYY"),
+      content:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus lorem sit amet libero accumsan, ac ultricies odio dignissim. In sit amet odio vel sem pretium mollis tempor nec lacus. Fusce ullamcorper sollicitudin mollis. Mauris at ultrices velit. Nam tempus at risus sed tempor. Cras non volutpat est, nec consectetur risus. Cras finibus feugiat pellentesque. Ut eros neque, commodo vitae sagittis et, fermentum eu mauris. Ut vehicula, lectus at molestie rutrum, lacus libero tempor odio, quis auctor quam lorem non nunc. Praesent iaculis faucibus nulla, eu maximus arcu mattis auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla pretium ut nisl non rutrum. Sed rhoncus dui at elementum dignissim. Nam suscipit ut urna sed aliquam. Donec et mollis arcu.",
+    },
+    {
+      title: "Prueba de titulo 2",
+      date:
+        "publicado el " +
+        moment().date() +
+        " " +
+        moment().format("MMMM") +
+        " " +
+        moment().format("YYYY"),
+      content:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus lorem sit amet libero accumsan, ac ultricies odio dignissim. In sit amet odio vel sem pretium mollis tempor nec lacus. Fusce ullamcorper sollicitudin mollis. Mauris at ultrices velit. Nam tempus at risus sed tempor. Cras non volutpat est, nec consectetur risus. Cras finibus feugiat pellentesque. Ut eros neque, commodo vitae sagittis et, fermentum eu mauris. Ut vehicula, lectus at molestie rutrum, lacus libero tempor odio, quis auctor quam lorem non nunc. Praesent iaculis faucibus nulla, eu maximus arcu mattis auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla pretium ut nisl non rutrum. Sed rhoncus dui at elementum dignissim. Nam suscipit ut urna sed aliquam. Donec et mollis arcu.",
+    },
+    {
+      title: "Prueba de titulo 3",
+      date:
+        "publicado el " +
+        moment().date() +
+        " " +
+        moment().format("MMMM") +
+        " " +
+        moment().format("YYYY"),
+      content:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus lorem sit amet libero accumsan, ac ultricies odio dignissim. In sit amet odio vel sem pretium mollis tempor nec lacus. Fusce ullamcorper sollicitudin mollis. Mauris at ultrices velit. Nam tempus at risus sed tempor. Cras non volutpat est, nec consectetur risus. Cras finibus feugiat pellentesque. Ut eros neque, commodo vitae sagittis et, fermentum eu mauris. Ut vehicula, lectus at molestie rutrum, lacus libero tempor odio, quis auctor quam lorem non nunc. Praesent iaculis faucibus nulla, eu maximus arcu mattis auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla pretium ut nisl non rutrum. Sed rhoncus dui at elementum dignissim. Nam suscipit ut urna sed aliquam. Donec et mollis arcu.",
+    },
+    {
+      title: "Prueba de titulo 4",
+      date:
+        "publicado el " +
+        moment().date() +
+        " " +
+        moment().format("MMMM") +
+        " " +
+        moment().format("YYYY"),
+      content:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus lorem sit amet libero accumsan, ac ultricies odio dignissim. In sit amet odio vel sem pretium mollis tempor nec lacus. Fusce ullamcorper sollicitudin mollis. Mauris at ultrices velit. Nam tempus at risus sed tempor. Cras non volutpat est, nec consectetur risus. Cras finibus feugiat pellentesque. Ut eros neque, commodo vitae sagittis et, fermentum eu mauris. Ut vehicula, lectus at molestie rutrum, lacus libero tempor odio, quis auctor quam lorem non nunc. Praesent iaculis faucibus nulla, eu maximus arcu mattis auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla pretium ut nisl non rutrum. Sed rhoncus dui at elementum dignissim. Nam suscipit ut urna sed aliquam. Donec et mollis arcu.",
+    },
+    {
+      title: "Prueba de titulo 5",
+      date:
+        "publicado el " +
+        moment().date() +
+        " " +
+        moment().format("MMMM") +
+        " " +
+        moment().format("YYYY"),
+      content:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus lorem sit amet libero accumsan, ac ultricies odio dignissim. In sit amet odio vel sem pretium mollis tempor nec lacus. Fusce ullamcorper sollicitudin mollis. Mauris at ultrices velit. Nam tempus at risus sed tempor. Cras non volutpat est, nec consectetur risus. Cras finibus feugiat pellentesque. Ut eros neque, commodo vitae sagittis et, fermentum eu mauris. Ut vehicula, lectus at molestie rutrum, lacus libero tempor odio, quis auctor quam lorem non nunc. Praesent iaculis faucibus nulla, eu maximus arcu mattis auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla pretium ut nisl non rutrum. Sed rhoncus dui at elementum dignissim. Nam suscipit ut urna sed aliquam. Donec et mollis arcu.",
+    },
+  ];
+
+  posts.forEach((item, index) => {
+    var post = `
                <article class="post">
                     <h2>${item.title}</h2>
                          <span class="date">${item.date}</span>
@@ -86,11 +86,10 @@ $(document).ready(function () {
                </article>
                `;
 
-      // console.log(post);
+    // console.log(post);
 
-      $("#posts").append(post);
-    });
-  }
+    $("#posts").append(post);
+  });
 
   // selector de temas.
   var theme = $("#theme");
