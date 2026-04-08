@@ -1,4 +1,4 @@
-export default function index() {
+function index() {
   $(document).ready(function () {
     if (window.location.href.indexOf("index") > -1) {
       $(".galeria").bxSlider({
@@ -92,95 +92,39 @@ export default function index() {
         $("#posts").append(post);
       });
     }
-    // selector de temas.
 
+    // selector de temas.
     var theme = $("#theme");
 
+    // tema verde
     $("#to-green").click(function () {
       theme.attr("href", "css/green.css");
     });
 
-<<<<<<< HEAD
-  var theme = $("#theme");
-
-  $("#to-green").click(function () {
-    theme.attr("href", "css/green.css");
-  });
-
-  $("#to-red").click(function () {
-    theme.attr("href", "css/red.css");
-  });
-
-  $("#to-blue").click(function () {
-    theme.attr("href", "css/blue.css");
-  });
-
-  $("#to-black").click(function () {
-    theme.attr("href", "css/black.css");
-  });
-
-  var footer_description = document.getElementById("footer_description");
-  footer_description.innerHTML =
-    `Web desarrollada por José Nathaniel Bonilla &copy; ` +
-    moment().format("YYYY");
-
-  //scroll arriba de la web.
-
-  $(".subir").click(function (e) {
-    e.preventDefault();
-
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      500,
-    );
-
-    return false;
-  });
-
-  //login falso
-
-  $("#login form").submit(function () {
-    var form_Name = $("#form_Name").val();
-    localStorage.setItem("form_Name", form_Name);
-  });
-
-  var form_Name = localStorage.getItem("form_Name");
-
-  if (form_Name != null && form_Name != "undefined") {
-    var about_Parrafo = $("#about p");
-
-    about_Parrafo.html("<br/><strong>Bienvenido, " + form_Name + "</strong> ");
-    about_Parrafo.append("<a href='#' id='logout'> Cerrar sesion </a");
-    $("#login").hide();
-
-    $("#logout").click(function () {
-      localStorage.clear();
-      location.reload();
-=======
+    // tema rojo
     $("#to-red").click(function () {
       theme.attr("href", "css/red.css");
->>>>>>> parent of 89c6a11 (corriginedo error de la web)
     });
 
+    // tema azul
     $("#to-blue").click(function () {
       theme.attr("href", "css/blue.css");
     });
+    // tema negro
+    $("#to-black").click(function () {
+      theme.attr("href", "css/black.css");
+    });
 
-<<<<<<< HEAD
-  if (window.location.href.indexOf("clock") > -1) {
-    setInterval(() => {
-      var reloj = moment().format("hh:mm:ss");
-      $("#reloj").html(reloj);
-    }, 1000);
-  }
+    if (window.location.href.indexOf("clock") > -1) {
+      setInterval(() => {
+        var reloj = moment().format("hh:mm:ss");
+        $("#reloj").html(reloj);
+      }, 1000);
+    }
 
-  // console.log("hola mundo desde un archivo externo");
-});
-=======
+    // console.log("hola mundo desde un archivo externo");
+
     //scroll arriba de la web.
-
     $(".subir").click(function (e) {
       e.preventDefault();
 
@@ -188,7 +132,7 @@ export default function index() {
         {
           scrollTop: 0,
         },
-        500
+        500,
       );
 
       return false;
@@ -207,7 +151,7 @@ export default function index() {
       var about_Parrafo = $("#about p");
 
       about_Parrafo.html(
-        "<br/><strong>Bienvenido, " + form_Name + "</strong> "
+        "<br/><strong>Bienvenido, " + form_Name + "</strong> ",
       );
       about_Parrafo.append("<a href='#' id='logout'> Cerrar sesion </a");
       $("#login").hide();
@@ -230,4 +174,5 @@ export default function index() {
     }
   });
 }
->>>>>>> parent of 89c6a11 (corriginedo error de la web)
+
+index();

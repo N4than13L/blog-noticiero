@@ -104,6 +104,7 @@
   font-family: Arial, Helvetica;
   width: 37%;
   float: right;
+  /* max-width: 5px; */
 }
 
 #sidebar h4 {
